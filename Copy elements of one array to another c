@@ -1,0 +1,21 @@
+#include<stdio.h>
+void main()
+{
+    int a[6]={11,22,4,12,30,95};
+    int b[6],i;
+    for(i=0;i<6;i++)
+    {
+        b[i]=a[i];
+    }
+        printf("\nFirst array is:");
+        for(i=0;i<6;i++)
+        {
+            printf("%d\t",a[i]);
+        }
+        printf("\nSecond array is:");
+        for(i=0;i<6;i++)
+        {
+            printf("%d\t",b[i]);
+        }
+
+}
