@@ -1,0 +1,23 @@
+#include <stdio.h>
+int main()
+{
+    int n=5,n1= 5;
+    int a[5]={1, 2, 3, 4, 5};
+    int b[5] = {6, 7, 8, 9, 10};
+    int arr_resultsize =n+n1;
+    int c[arr_resultsize];
+    for (int i = 0; i <n; i++) 
+    {
+        c[i] = a[i];
+    }
+    for (int i = 0;i<n1;i++)
+    for(int j=n;j < arr_resultsize;j++)
+    {
+        c[j] = b[i];
+    }
+    for (int i = 0; i < arr_resultsize; i++) 
+    {
+        printf("%d\t ", c[i]);
+    }
+    return 0;
+}
