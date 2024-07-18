@@ -1,0 +1,21 @@
+#include <stdio.h>
+#include<limits.h>
+void main() 
+{
+    int arr[] = {123,456,789,741,258,963};
+    int n=sizeof(arr)/sizeof(arr[0]);
+    int first_minimum=INT_MAX,second_minimum=INT_MAX;
+    for(int i=0;i<n;i++) 
+    {
+      if(arr[i]<first_minimum)
+      {
+          second_minimum=first_minimum;
+          first_minimum=arr[i];
+      }
+      else if(arr[i]<second_minimum&&arr[i]!=first_minimum)
+      {
+          second_minimum=arr[i];
+      }
+      }
+        printf("Second smallest number is:%d\n",second_minimum);
+}
